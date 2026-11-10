@@ -1,0 +1,2 @@
+Device,Workload,Dataset,Model,Samples Evaluated,Repetitions,Target Measurement Time (s),Total Measurement Time (s),Accuracy,Precision,Recall,F1-Score,ROC-AUC,Inference Time (s),Throughput,Carbon Emissions (kgCO2e),MLPerf Target,Benchmark Status
+AMD Ryzen 7 6800H,Keyword Spotting,Speech Commands v0.02,kws_ref_model,1000,19.33,30.0,30.668,0.919,0.936,0.919,0.9232,0.9953,1.587,630.12,2.673e-06,0.9,PASSED

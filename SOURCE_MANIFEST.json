@@ -1,0 +1,937 @@
+{
+  "source_repository": "https://github.com/STU-4202626/EdgeAI-Performance-Analysis",
+  "source_commit": "7d31a9c273d1e4b088faed55508907e7ef04c3d3",
+  "files": [
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/mlperf_keyword_spotting_CPU_bench.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/mlperf_keyword_spotting_CPU_bench.py",
+      "kind": "unchanged",
+      "sha256": "8f5c536d16fe0273783d07d4442b75a1a38b982a5414798d86c3cd0aba5af766",
+      "bytes": 16644
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/results_helper.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/results_helper.py",
+      "kind": "unchanged",
+      "sha256": "56dbac7bf04651bfcd090dcb0167e9c648a583156ae106d0283ccadfb32751a5",
+      "bytes": 1582
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/results/CPU_keyword_spotting_benchmark_results.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/results/CPU_keyword_spotting_benchmark_results.csv",
+      "kind": "unchanged",
+      "sha256": "a163de07c191c6aac55ff9e9395318b9b28578cbeedb43d07023b40e609568b0",
+      "bytes": 902
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/results/CPU_keyword_spotting_predictions.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/results/CPU_keyword_spotting_predictions.csv",
+      "kind": "unchanged",
+      "sha256": "3abb685018af5149ad7f715478e44f26f03b50e05098b689e62e2bc8b81c09f3",
+      "bytes": 9508
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/results/benchmark_log.txt",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/results/benchmark_log.txt",
+      "kind": "unchanged",
+      "sha256": "4e88cca8067ae5f9e9455ac301758877cafe4b5f48d9ecbcade415341b1dce49",
+      "bytes": 3701
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/results/confusion_matrix.png",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/results/confusion_matrix.png",
+      "kind": "unchanged",
+      "sha256": "21ed4b39e3e900550cd69c3acb4b846220cbb9bc2c1580fdd7f437bdf2f7d90d",
+      "bytes": 195966
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/results/emissions.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/results/emissions.csv",
+      "kind": "privacy-reduced-columns",
+      "sha256": "e148177c4cd8d54ed0a46f3bf8bc5b8b39b66be5bb5e5bf22f38615189db3e9b",
+      "bytes": 12279,
+      "source_sha256": "e7838fe8368050e925a5a211dcded3e27082c47913b0ad1ffa491f809eea700f",
+      "source_bytes": 13586,
+      "removed_columns": [
+        "country_name",
+        "country_iso_code",
+        "region",
+        "cloud_region",
+        "longitude",
+        "latitude"
+      ],
+      "retained_columns": [
+        "timestamp",
+        "project_name",
+        "run_id",
+        "experiment_id",
+        "duration",
+        "emissions",
+        "emissions_rate",
+        "cpu_power",
+        "gpu_power",
+        "ram_power",
+        "cpu_energy",
+        "gpu_energy",
+        "ram_energy",
+        "energy_consumed",
+        "water_consumed",
+        "cloud_provider",
+        "os",
+        "python_version",
+        "codecarbon_version",
+        "cpu_count",
+        "cpu_model",
+        "gpu_count",
+        "gpu_model",
+        "ram_total_size",
+        "tracking_mode",
+        "cpu_utilization_percent",
+        "gpu_utilization_percent",
+        "ram_utilization_percent",
+        "ram_used_gb",
+        "on_cloud",
+        "pue",
+        "wue"
+      ],
+      "row_count": 26,
+      "retained_values_sha256": "2efced12e3455a7054b8f6e3f3f236285d2136b85f181c396b7a25c233e7b048"
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/results/roc_curve.png",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/results/roc_curve.png",
+      "kind": "unchanged",
+      "sha256": "ce5fb6373d0d958297d4d99ceb2e006c8f2d0ca381a9c4628b68ff7d0d3d01ff",
+      "bytes": 102384
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/get_dataset.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/get_dataset.py",
+      "kind": "unchanged",
+      "sha256": "ddfe37b074cf778d3d6cc8e657fcadd0ce031844b97cbbebc3a424af9041dc7c",
+      "bytes": 15447
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/kws_util.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/kws_util.py",
+      "kind": "unchanged",
+      "sha256": "17d44f48b9e7bdf7da8166f16118724a5fd0734df6d949835fdb4b4e3a39b55e",
+      "bytes": 6524
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/keras_model.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/keras_model.py",
+      "kind": "unchanged",
+      "sha256": "0e0a1309cd179b5c235beb31c63c168ac74196fa378de0ed8aba7197826c697d",
+      "bytes": 9093
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/trained_models/kws_ref_model/saved_model.pb",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/trained_models/kws_ref_model/saved_model.pb",
+      "kind": "unchanged",
+      "sha256": "80665dd19eeb03d1152fdc098b5635261731b23478d09f6ff2166da799f98138",
+      "bytes": 819446
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/trained_models/kws_ref_model/variables/variables.data-00000-of-00001",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/trained_models/kws_ref_model/variables/variables.data-00000-of-00001",
+      "kind": "unchanged",
+      "sha256": "5ebfddd34e85a2d35e87e27a8a803353534019bb460907b16db5fa72d757e8c5",
+      "bytes": 321307
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/trained_models/kws_ref_model/variables/variables.index",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/training/keyword_spotting/trained_models/kws_ref_model/variables/variables.index",
+      "kind": "unchanged",
+      "sha256": "3f21dd9ea6736e20e70c5ed2f40ed9d8a7d12b98316ac0e4ab8f4eb7e303d738",
+      "bytes": 9326
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/mlperf_keyword_spotting_RunPod_GPU.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/mlperf_keyword_spotting_RunPod_GPU.py",
+      "kind": "unchanged",
+      "sha256": "70e91ae1e6f7a2364f7753fc97a480247a45ef8d0f9bb6e68ddcec66741de9e5",
+      "bytes": 16847
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/results_helper.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/results_helper.py",
+      "kind": "unchanged",
+      "sha256": "56dbac7bf04651bfcd090dcb0167e9c648a583156ae106d0283ccadfb32751a5",
+      "bytes": 1582
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/results/GPU_keyword_spotting_benchmark_results.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/results/GPU_keyword_spotting_benchmark_results.csv",
+      "kind": "unchanged",
+      "sha256": "2f6bf95f30336fd8d0a8ccdd7d379e14f8ca97fdb114b4e22af287749f532644",
+      "bytes": 928
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/results/GPU_keyword_spotting_predictions.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/results/GPU_keyword_spotting_predictions.csv",
+      "kind": "unchanged",
+      "sha256": "3abb685018af5149ad7f715478e44f26f03b50e05098b689e62e2bc8b81c09f3",
+      "bytes": 9508
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/results/benchmark_log.txt",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/results/benchmark_log.txt",
+      "kind": "unchanged",
+      "sha256": "219ca46d91dddff204087ef5af79b902f2ffe73fbfe6872b21c9be5553e93359",
+      "bytes": 3753
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/results/confusion_matrix.png",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/results/confusion_matrix.png",
+      "kind": "unchanged",
+      "sha256": "f70d19f9fd7b36d8e3ee3039a50d353ffae14eccca839847f50b7b121ae7d2e3",
+      "bytes": 270266
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/results/emissions.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/results/emissions.csv",
+      "kind": "privacy-reduced-columns",
+      "sha256": "e83f5b6809d9364430976d8b69136471f7176c4f7bed84b7682856785f95ba27",
+      "bytes": 16132,
+      "source_sha256": "95ef2e4d1bfe4102cb64b1619e7c8406bc9b1e51e819f24c239c92756c9a3d84",
+      "source_bytes": 17349,
+      "removed_columns": [
+        "country_name",
+        "country_iso_code",
+        "region",
+        "cloud_region",
+        "longitude",
+        "latitude"
+      ],
+      "retained_columns": [
+        "timestamp",
+        "project_name",
+        "run_id",
+        "experiment_id",
+        "duration",
+        "emissions",
+        "emissions_rate",
+        "cpu_power",
+        "gpu_power",
+        "ram_power",
+        "cpu_energy",
+        "gpu_energy",
+        "ram_energy",
+        "energy_consumed",
+        "water_consumed",
+        "cloud_provider",
+        "os",
+        "python_version",
+        "codecarbon_version",
+        "cpu_count",
+        "cpu_model",
+        "gpu_count",
+        "gpu_model",
+        "ram_total_size",
+        "tracking_mode",
+        "cpu_utilization_percent",
+        "gpu_utilization_percent",
+        "ram_utilization_percent",
+        "ram_used_gb",
+        "on_cloud",
+        "pue",
+        "wue"
+      ],
+      "row_count": 28,
+      "retained_values_sha256": "b3547158622fe3a7e8fcf1809990d3440a15e19257ddb7cc736d316eaca2eab8"
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/results/roc_curve.png",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/results/roc_curve.png",
+      "kind": "unchanged",
+      "sha256": "6826807029ad8e8a2b14055dfdea2481b750af19cdfaf9bdf39e286009ce078f",
+      "bytes": 112466
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/get_dataset.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/get_dataset.py",
+      "kind": "unchanged",
+      "sha256": "ddfe37b074cf778d3d6cc8e657fcadd0ce031844b97cbbebc3a424af9041dc7c",
+      "bytes": 15447
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/kws_util.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/kws_util.py",
+      "kind": "unchanged",
+      "sha256": "17d44f48b9e7bdf7da8166f16118724a5fd0734df6d949835fdb4b4e3a39b55e",
+      "bytes": 6524
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/keras_model.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/keras_model.py",
+      "kind": "unchanged",
+      "sha256": "0e0a1309cd179b5c235beb31c63c168ac74196fa378de0ed8aba7197826c697d",
+      "bytes": 9093
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/trained_models/kws_ref_model/saved_model.pb",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/trained_models/kws_ref_model/saved_model.pb",
+      "kind": "unchanged",
+      "sha256": "80665dd19eeb03d1152fdc098b5635261731b23478d09f6ff2166da799f98138",
+      "bytes": 819446
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/trained_models/kws_ref_model/variables/variables.data-00000-of-00001",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/trained_models/kws_ref_model/variables/variables.data-00000-of-00001",
+      "kind": "unchanged",
+      "sha256": "5ebfddd34e85a2d35e87e27a8a803353534019bb460907b16db5fa72d757e8c5",
+      "bytes": 321307
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/trained_models/kws_ref_model/variables/variables.index",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/training/keyword_spotting/trained_models/kws_ref_model/variables/variables.index",
+      "kind": "unchanged",
+      "sha256": "3f21dd9ea6736e20e70c5ed2f40ed9d8a7d12b98316ac0e4ab8f4eb7e303d738",
+      "bytes": 9326
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/mlperf_keyword_spotting_Pi5_full.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/mlperf_keyword_spotting_Pi5_full.py",
+      "kind": "unchanged",
+      "sha256": "b62200943086ab01ed2f4e796cbbac8ae8f6c9f45a9d769c5961c1f4ca615a44",
+      "bytes": 15474
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/mlperf_keyword_spotting_Pi5_quant.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/mlperf_keyword_spotting_Pi5_quant.py",
+      "kind": "unchanged",
+      "sha256": "99b08af8bf7976347e36bfe372c1cfb22c77b6b57d5f11411434b756c7a65117",
+      "bytes": 15684
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/results_helper.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/results_helper.py",
+      "kind": "unchanged",
+      "sha256": "56dbac7bf04651bfcd090dcb0167e9c648a583156ae106d0283ccadfb32751a5",
+      "bytes": 1582
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_full/Pi5_keyword_spotting_benchmark_results_full.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_full/Pi5_keyword_spotting_benchmark_results_full.csv",
+      "kind": "unchanged",
+      "sha256": "9f8e85fb1c144f8d7f2f33cf137b4d223bba022bd3c7f023ecbff2e4055d0aea",
+      "bytes": 890
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_full/Pi5_keyword_spotting_predictions_full.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_full/Pi5_keyword_spotting_predictions_full.csv",
+      "kind": "unchanged",
+      "sha256": "3abb685018af5149ad7f715478e44f26f03b50e05098b689e62e2bc8b81c09f3",
+      "bytes": 9508
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_full/benchmark_log.txt",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_full/benchmark_log.txt",
+      "kind": "unchanged",
+      "sha256": "31ad50b215a16c1ef3c7ca6a2411ee0ae0c45c282dcd51e9ff45fb8341bd596a",
+      "bytes": 3698
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_full/confusion_matrix.png",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_full/confusion_matrix.png",
+      "kind": "unchanged",
+      "sha256": "b98915d8f3ecc4b81e69c3ff5e1d34b3adf655662f6445a09e4e1708d69d4244",
+      "bytes": 268097
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_full/emissions.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_full/emissions.csv",
+      "kind": "privacy-reduced-columns",
+      "sha256": "0b5311e49fea5b3bc6abb12345791b3571a723c4e08fdd470dd145ea045d51df",
+      "bytes": 12605,
+      "source_sha256": "791d8914061c7ba9f15187e62db1e2bc4972c81ea9040c3d269bfeb9a347d689",
+      "source_bytes": 13990,
+      "removed_columns": [
+        "country_name",
+        "country_iso_code",
+        "region",
+        "cloud_region",
+        "longitude",
+        "latitude"
+      ],
+      "retained_columns": [
+        "timestamp",
+        "project_name",
+        "run_id",
+        "experiment_id",
+        "duration",
+        "emissions",
+        "emissions_rate",
+        "cpu_power",
+        "gpu_power",
+        "ram_power",
+        "cpu_energy",
+        "gpu_energy",
+        "ram_energy",
+        "energy_consumed",
+        "water_consumed",
+        "cloud_provider",
+        "os",
+        "python_version",
+        "codecarbon_version",
+        "cpu_count",
+        "cpu_model",
+        "gpu_count",
+        "gpu_model",
+        "ram_total_size",
+        "tracking_mode",
+        "cpu_utilization_percent",
+        "gpu_utilization_percent",
+        "ram_utilization_percent",
+        "ram_used_gb",
+        "on_cloud",
+        "pue",
+        "wue"
+      ],
+      "row_count": 28,
+      "retained_values_sha256": "01ff3f428d029d78749e15622779f61a91848b23d070a2f50a2634d28e44e8cd"
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_full/roc_curve.png",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_full/roc_curve.png",
+      "kind": "unchanged",
+      "sha256": "b4e0df10d10ea91363038fbf3105c1cc2fd073537461287db5020041df4c8b57",
+      "bytes": 112428
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_quant/Pi5_keyword_spotting_benchmark_results_quant.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_quant/Pi5_keyword_spotting_benchmark_results_quant.csv",
+      "kind": "unchanged",
+      "sha256": "d44d0a61e5221740d2a6a9d1d9389e27e1e3e53371c34de73ac49c26f2f83aa2",
+      "bytes": 926
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_quant/Pi5_keyword_spotting_predictions_quant.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_quant/Pi5_keyword_spotting_predictions_quant.csv",
+      "kind": "unchanged",
+      "sha256": "c8d2d1a09a3dc99051a2a2801c1cf99aa10038231b4ab4613dcbf6cb89c14d77",
+      "bytes": 9518
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_quant/benchmark_log.txt",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_quant/benchmark_log.txt",
+      "kind": "unchanged",
+      "sha256": "154758f758f44e9fada459da629cca6442e9389b5b60cc5bb4dea06f049defd4",
+      "bytes": 3821
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_quant/confusion_matrix.png",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_quant/confusion_matrix.png",
+      "kind": "unchanged",
+      "sha256": "10df9c121b9bd8a5ad01c2c103ab30e2c68b7e79dd92c091afb53320f63eca1a",
+      "bytes": 265249
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_quant/emissions.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_quant/emissions.csv",
+      "kind": "privacy-reduced-columns",
+      "sha256": "24c99763dcc3760bcdad2ef5d8a68f040a4d798de4a038147995ce88a68cddc4",
+      "bytes": 7713,
+      "source_sha256": "6d5eb9bd65353d8dc5c6be59172b0476bdc4e083f1710b910e892e8578dbdf47",
+      "source_bytes": 8534,
+      "removed_columns": [
+        "country_name",
+        "country_iso_code",
+        "region",
+        "cloud_region",
+        "longitude",
+        "latitude"
+      ],
+      "retained_columns": [
+        "timestamp",
+        "project_name",
+        "run_id",
+        "experiment_id",
+        "duration",
+        "emissions",
+        "emissions_rate",
+        "cpu_power",
+        "gpu_power",
+        "ram_power",
+        "cpu_energy",
+        "gpu_energy",
+        "ram_energy",
+        "energy_consumed",
+        "water_consumed",
+        "cloud_provider",
+        "os",
+        "python_version",
+        "codecarbon_version",
+        "cpu_count",
+        "cpu_model",
+        "gpu_count",
+        "gpu_model",
+        "ram_total_size",
+        "tracking_mode",
+        "cpu_utilization_percent",
+        "gpu_utilization_percent",
+        "ram_utilization_percent",
+        "ram_used_gb",
+        "on_cloud",
+        "pue",
+        "wue"
+      ],
+      "row_count": 16,
+      "retained_values_sha256": "d1aede33aa303ebe22427ab904a071ec1e5bec6ac3ac990a98716a1a458f27b4"
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_quant/roc_curve.png",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/results_quant/roc_curve.png",
+      "kind": "unchanged",
+      "sha256": "4c9fc7f04664d060599e73d9d2bc13da76152592e97180cc7b06514df8c7916b",
+      "bytes": 115049
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/trained_models/kws_ref_model/saved_model.pb",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/trained_models/kws_ref_model/saved_model.pb",
+      "kind": "unchanged",
+      "sha256": "80665dd19eeb03d1152fdc098b5635261731b23478d09f6ff2166da799f98138",
+      "bytes": 819446
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/trained_models/kws_ref_model/variables/variables.data-00000-of-00001",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/trained_models/kws_ref_model/variables/variables.data-00000-of-00001",
+      "kind": "unchanged",
+      "sha256": "5ebfddd34e85a2d35e87e27a8a803353534019bb460907b16db5fa72d757e8c5",
+      "bytes": 321307
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/trained_models/kws_ref_model/variables/variables.index",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/trained_models/kws_ref_model/variables/variables.index",
+      "kind": "unchanged",
+      "sha256": "3f21dd9ea6736e20e70c5ed2f40ed9d8a7d12b98316ac0e4ab8f4eb7e303d738",
+      "bytes": 9326
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/trained_models/kws_ref_model.tflite",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/training/keyword_spotting/trained_models/kws_ref_model.tflite",
+      "kind": "unchanged",
+      "sha256": "aeea436800704fce17b17292e4412630ad856e9d777c044c64ef748a880bd0ae",
+      "bytes": 53936
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/mlperf_keyword_spotting_Android_bench.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/mlperf_keyword_spotting_Android_bench.py",
+      "kind": "unchanged",
+      "sha256": "786f6b669a7f3fe206c41ab7a402937082038ff302459b8e0183bb2fa8812bf0",
+      "bytes": 17005
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_Android/training/results_helper.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_Android/training/results_helper.py",
+      "kind": "unchanged",
+      "sha256": "56dbac7bf04651bfcd090dcb0167e9c648a583156ae106d0283ccadfb32751a5",
+      "bytes": 1582
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/results/Android_keyword_spotting_benchmark_results.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/results/Android_keyword_spotting_benchmark_results.csv",
+      "kind": "unchanged",
+      "sha256": "528987e1f781d775f57c880c5864b0816e1f1b4227eab76f461f3b702c1a9197",
+      "bytes": 975
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/results/Android_keyword_spotting_predictions.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/results/Android_keyword_spotting_predictions.csv",
+      "kind": "unchanged",
+      "sha256": "c3b3879d1dc23604258c6da7c825e780768014ab9245df68c7b24cbbb8095648",
+      "bytes": 9521
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/results/benchmark_log.txt",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/results/benchmark_log.txt",
+      "kind": "unchanged",
+      "sha256": "776e1b6f7918cfacca572ab5afff60e41ac8fdb80e3acf9898ad222b31156545",
+      "bytes": 3816
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/results/confusion_matrix.png",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/results/confusion_matrix.png",
+      "kind": "unchanged",
+      "sha256": "da4757e338ffd883450ee04580ec62b99bb68f2095afa0dc002b5ae016439515",
+      "bytes": 268653
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/results/emissions.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/results/emissions.csv",
+      "kind": "privacy-reduced-columns",
+      "sha256": "ce4b5004e1502e0b735e8736c8685143202d6051281dedb36def3fe00096a632",
+      "bytes": 5532,
+      "source_sha256": "c7649573cc0a8735864159a6f3cfdf572b1122884a00992251b8e78d35662363",
+      "source_bytes": 6081,
+      "removed_columns": [
+        "country_name",
+        "country_iso_code",
+        "region",
+        "cloud_region",
+        "longitude",
+        "latitude"
+      ],
+      "retained_columns": [
+        "timestamp",
+        "project_name",
+        "run_id",
+        "duration",
+        "emissions",
+        "emissions_rate",
+        "cpu_power",
+        "gpu_power",
+        "ram_power",
+        "cpu_energy",
+        "gpu_energy",
+        "ram_energy",
+        "energy_consumed",
+        "cloud_provider",
+        "os",
+        "python_version",
+        "codecarbon_version",
+        "cpu_count",
+        "cpu_model",
+        "gpu_count",
+        "gpu_model",
+        "ram_total_size",
+        "tracking_mode",
+        "on_cloud",
+        "pue"
+      ],
+      "row_count": 16,
+      "retained_values_sha256": "52879c1f8388b3d6c25f111d6fc59834fb69779ced8d842628f8445236b8a957"
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/results/roc_curve.png",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/results/roc_curve.png",
+      "kind": "unchanged",
+      "sha256": "1b97c292d3a76eace15f1eda94bd18e1ccaee66add7a62a5a66c8aae6e0fe484",
+      "bytes": 115122
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/get_dataset.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/get_dataset.py",
+      "kind": "unchanged",
+      "sha256": "ddfe37b074cf778d3d6cc8e657fcadd0ce031844b97cbbebc3a424af9041dc7c",
+      "bytes": 15447
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/kws_util.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/kws_util.py",
+      "kind": "unchanged",
+      "sha256": "17d44f48b9e7bdf7da8166f16118724a5fd0734df6d949835fdb4b4e3a39b55e",
+      "bytes": 6524
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/keras_model.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/keras_model.py",
+      "kind": "unchanged",
+      "sha256": "0e0a1309cd179b5c235beb31c63c168ac74196fa378de0ed8aba7197826c697d",
+      "bytes": 9093
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/trained_models/kws_ref_model.tflite",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/trained_models/kws_ref_model.tflite",
+      "kind": "unchanged",
+      "sha256": "aeea436800704fce17b17292e4412630ad856e9d777c044c64ef748a880bd0ae",
+      "bytes": 53936
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/export_test_set.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_Android/training/keyword_spotting/export_test_set.py",
+      "kind": "unchanged",
+      "sha256": "c3c1b1a8bdf493ff1c1bcb6b035f760214c7d33b65fab46adbf79dbb385a95ac",
+      "bytes": 1889
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/mlperf_keyword_spotting_ESP32S3_bench.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/mlperf_keyword_spotting_ESP32S3_bench.py",
+      "kind": "unchanged",
+      "sha256": "ff708bc52ab3ae85bba30834dc8587e8a1c44847c62dc6d5d45a75bedbc66655",
+      "bytes": 17710
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/results_helper.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/results_helper.py",
+      "kind": "unchanged",
+      "sha256": "56dbac7bf04651bfcd090dcb0167e9c648a583156ae106d0283ccadfb32751a5",
+      "bytes": 1582
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/results/ESP32S3_keyword_spotting_benchmark_results.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/results/ESP32S3_keyword_spotting_benchmark_results.csv",
+      "kind": "unchanged",
+      "sha256": "f2570ce095d62e1dea18790c57235c7b3de92a7a2fb0cd9b1d2057ff040fb02b",
+      "bytes": 895
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/results/ESP32S3_keyword_spotting_predictions.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/results/ESP32S3_keyword_spotting_predictions.csv",
+      "kind": "unchanged",
+      "sha256": "c8d2d1a09a3dc99051a2a2801c1cf99aa10038231b4ab4613dcbf6cb89c14d77",
+      "bytes": 9518
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/results/confusion_matrix.png",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/results/confusion_matrix.png",
+      "kind": "unchanged",
+      "sha256": "c784a3c1d3f04d937efb9b271d3732b303479868ca81ed3d5efc14f1f3af27d7",
+      "bytes": 192100
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/results/roc_curve.png",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/results/roc_curve.png",
+      "kind": "unchanged",
+      "sha256": "7d0560fc81c83ac2c5f88c34a5209fedfcebac1ca80f5084569883e77e476774",
+      "bytes": 106495
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/get_dataset.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/get_dataset.py",
+      "kind": "unchanged",
+      "sha256": "b37ce6c558ed632a64657f4804c192233296c9389d370d7b3673d6f8cb092cfb",
+      "bytes": 15510
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/kws_util.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/kws_util.py",
+      "kind": "unchanged",
+      "sha256": "b82ce855c7f78e8a3052898a70387aa49c90d822eb61e0b38cb403da8e31ef6f",
+      "bytes": 6515
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/keras_model.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/keras_model.py",
+      "kind": "unchanged",
+      "sha256": "89d2da777cc82b0d79c1c2c08c8a342f43eeca4ee37a3eaa7eec431778cb9818",
+      "bytes": 9202
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/trained_models/kws_ref_model.tflite",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/trained_models/kws_ref_model.tflite",
+      "kind": "unchanged",
+      "sha256": "aeea436800704fce17b17292e4412630ad856e9d777c044c64ef748a880bd0ae",
+      "bytes": 53936
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/CMakeLists.txt",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/CMakeLists.txt",
+      "kind": "unchanged",
+      "sha256": "e21f58364f2bf4d57b54cfcb5bc8e23b0faab3626a2f8365ea4768eee4baeefa",
+      "bytes": 107
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/README.md",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/README.md",
+      "kind": "unchanged",
+      "sha256": "919c93786931be22a7a049862ef926d517e82f76e7f792c1bc30f550b84bd66d",
+      "bytes": 6188
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/dependencies.lock",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/dependencies.lock",
+      "kind": "unchanged",
+      "sha256": "380663fac9a1c896e1bccb52ef881b18a0a94204e79699110240ec71dbe3b529",
+      "bytes": 948
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/CMakeLists.txt",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/CMakeLists.txt",
+      "kind": "unchanged",
+      "sha256": "36ebfd27a296e8d5cdb8fb67f503161b914a95d150cc85c6b8c593271d972003",
+      "bytes": 309
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/constants.cc",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/constants.cc",
+      "kind": "unchanged",
+      "sha256": "1c1e06f40b97272c566958e3b443a964e20559267144476179acfb8e5dcd2d69",
+      "bytes": 791
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/constants.h",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/constants.h",
+      "kind": "unchanged",
+      "sha256": "2f664f73827cefde9ebd585f17c0e4c86f552e5f25f7a474e69e64345bb46db0",
+      "bytes": 1573
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/idf_component.yml",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/idf_component.yml",
+      "kind": "unchanged",
+      "sha256": "253ba78232d35da2356509b05309f1012b830494db6e96bb63964691a8954a70",
+      "bytes": 61
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/main.cc",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/main.cc",
+      "kind": "unchanged",
+      "sha256": "40d53456a0d69f15a0e39c1dcaeac4eed894cf2a890972d664b12ef6f172b6f9",
+      "bytes": 915
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/main_functions.cc",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/main_functions.cc",
+      "kind": "unchanged",
+      "sha256": "73771e1b64cb20539aaf5a360211e29599d78b6748b1ee54bf6057a33ef0e2c1",
+      "bytes": 10600
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/main_functions.h",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/main_functions.h",
+      "kind": "unchanged",
+      "sha256": "80f4bbfe1add9dd591092db254398ace9ad4d0d0dda3f444d427d609ad3bf5cf",
+      "bytes": 1333
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/model.cc",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/model.cc",
+      "kind": "unchanged",
+      "sha256": "b24e200885a3d10a12cde2c096f942d853ce5b689347c168be9f3286642865ad",
+      "bytes": 332695
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/model.h",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/model.h",
+      "kind": "unchanged",
+      "sha256": "19d78a6e16d841fe36564618af88c9b3eec6177aebafec06876336fe1f817815",
+      "bytes": 1295
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/output_handler.cc",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/output_handler.cc",
+      "kind": "unchanged",
+      "sha256": "8d889cef2f4ce3bfd02c0526159dd5ccef8fa161cfd43d3311ec3d8e39edf444",
+      "bytes": 949
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/output_handler.h",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/main/output_handler.h",
+      "kind": "unchanged",
+      "sha256": "b7fe68f9e9ad91cead221d0f8c2b231a18e45becd09721e5d517580d9daeb599",
+      "bytes": 1048
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/partitions.csv",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/partitions.csv",
+      "kind": "unchanged",
+      "sha256": "39f03a800f72fd1d47483c27a5eaffedca2e3c916eb9fa2ed29725621ef73c67",
+      "bytes": 469
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/sdkconfig.defaults",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/keyword_spotting/firmware/sdkconfig.defaults",
+      "kind": "unchanged",
+      "sha256": "3d42a4b6e9e70fc3aee0535c1d2b15f9b00624d91e737f0e608f2cd860bd0304",
+      "bytes": 554
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/esp32_energy_helper.py",
+      "target": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/training/esp32_energy_helper.py",
+      "kind": "unchanged",
+      "sha256": "09cfec955c142aa0691636ab8184a80fd5f0aba4b952cd87210abdc112339043",
+      "bytes": 1525
+    },
+    {
+      "source": "MLPerf_Tiny/LICENSE.md",
+      "target": "MLPerf_Tiny/LICENSE.md",
+      "kind": "unchanged",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "bytes": 10174
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_Android/mlperf_tiny_Android_summary.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_Android/mlperf_tiny_Android_summary.csv",
+      "kind": "selected-records",
+      "source_sha256": "503f81f0316429c64c27c31c6162e6ddeabe9981fe8409e7169e7b710ac675fe",
+      "sha256": "feff62ad0a9586494277143389acd0bc5817113e688be99ee15f29dc67720148",
+      "bytes": 423,
+      "rows": 1,
+      "filter": {
+        "Workload": "Keyword Spotting"
+      }
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/mlperf_tiny_ESP32S3_summary.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_ESP32-S3/mlperf_tiny_ESP32S3_summary.csv",
+      "kind": "selected-records",
+      "source_sha256": "6bae19c7f59731da042b6f33fb7ff4c5e13b2387cb29ad19a0a12cf1126a3a74",
+      "sha256": "fb42839f5afafc91d9057f95a077d5d7f9d42ecf13d3863475034525c3f8d29e",
+      "bytes": 402,
+      "rows": 1,
+      "filter": {
+        "Workload": "Keyword Spotting"
+      }
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_CPU/mlperf_tiny_PC_CPU_summary.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_PC_CPU/mlperf_tiny_PC_CPU_summary.csv",
+      "kind": "selected-records",
+      "source_sha256": "d0e2ff8ddb44aad2a76e32bef6687a87226ecab7b43af5e48f43035a726f1cbb",
+      "sha256": "c13ef33cfbe8cc9e1176497539d12e6e1e8efe4b7d4224027005c811022ffad4",
+      "bytes": 405,
+      "rows": 1,
+      "filter": {
+        "Workload": "Keyword Spotting"
+      }
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_PC_GPU/mlperf_tiny_PC_GPU_summary.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_PC_GPU/mlperf_tiny_PC_GPU_summary.csv",
+      "kind": "selected-records",
+      "source_sha256": "2f2fed037808e63da460d73f2fc7433dc5b5b5de1d3afa255eac2fbd69ef49cf",
+      "sha256": "c14256a57d5112114b2eca60234e96d86084d75b521cc8be42b5e0355cc39108",
+      "bytes": 411,
+      "rows": 1,
+      "filter": {
+        "Workload": "Keyword Spotting"
+      }
+    },
+    {
+      "source": "MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/mlperf_tiny_RaspberryPi5_summary.csv",
+      "target": "historical-results/MLPerf_Tiny/MLPerf_Tiny_RaspberryPi5/mlperf_tiny_RaspberryPi5_summary.csv",
+      "kind": "selected-records",
+      "source_sha256": "a21bb9ce2d50319964d85f23b81b1a01d435dc44408ede50b3eaa46a2a187e16",
+      "sha256": "4c6420f5f8e205833197cdf876daa8d2641a6054b9058ae39abf23c58aada0c6",
+      "bytes": 566,
+      "rows": 2,
+      "filter": {
+        "Workload": "Keyword Spotting"
+      }
+    },
+    {
+      "source": "MLPerf_Tiny/mlperf_tiny_all_devices_summary.csv",
+      "target": "historical-results/MLPerf_Tiny/mlperf_tiny_all_devices_summary.csv",
+      "kind": "selected-records",
+      "source_sha256": "ee3b1a2eda25ca9a71ccaf6ff58309f1bfe634885d941a9fe97d69ea46ef5c70",
+      "sha256": "ccaa053f655e81de4b5b6b16e4fe48901736e6cc17e945357b0c650125dcd746",
+      "bytes": 1211,
+      "rows": 6,
+      "filter": {
+        "Workload": "Keyword Spotting"
+      }
+    },
+    {
+      "source": "MLPerf_Tiny/compile_results.py",
+      "target": "MLPerf_Tiny/compile_results.py",
+      "kind": "workload-discovery-only",
+      "source_sha256": "6537af1d2d105a562bd28b2a2b7274b93bf7c4e800a5d656905352fa11f63ea7",
+      "sha256": "f2b86e027204eb012d67d3d3314f651fba919744831285b454662924c73540d9",
+      "bytes": 9293
+    },
+    {
+      "source": "MLPerf_Tiny/compile_all_devices.py",
+      "target": "MLPerf_Tiny/compile_all_devices.py",
+      "kind": "unchanged",
+      "sha256": "28fc8cbd900fc49cbe55f56d1ec5efa112b2337fcadbfce2de8f3abf9c9509e4",
+      "bytes": 2781
+    }
+  ],
+  "hash_convention": {
+    "sha256": "SHA-256 of destination file bytes; privacy-reduced entries describe the public copy.",
+    "source_sha256": "SHA-256 of original source Git-blob bytes before a declared transformation.",
+    "retained_values_sha256": "SHA-256 of UTF-8 JSON [header, *rows] from the original retained-column projection, ensure_ascii=false, separators comma/colon; all cells remain strings."
+  }
+}

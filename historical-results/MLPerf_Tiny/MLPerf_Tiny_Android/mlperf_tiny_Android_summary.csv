@@ -1,0 +1,2 @@
+Device,Workload,Dataset,Model,Samples Evaluated,Repetitions,Target Measurement Time (s),Total Measurement Time (s),Accuracy,Precision,Recall,F1-Score,ROC-AUC,Inference Time (s),Throughput,Carbon Emissions (kgCO2e),MLPerf Target,Benchmark Status
+Samsung Galaxy S26 Ultra,Keyword Spotting,Speech Commands v0.02,kws_ref_model.tflite,1000,664.33,30.0,30.033,0.911,0.9315,0.911,0.9161,0.9941,0.046,21897.81,1.395e-09,0.9,PASSED

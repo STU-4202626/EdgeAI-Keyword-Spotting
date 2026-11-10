@@ -1,0 +1,4 @@
+-r base.txt
+pyserial
+tensorflow-datasets
+# KWS preprocessing additionally needs a compatible TensorFlow/Keras 2 build.
